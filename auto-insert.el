@@ -1,0 +1,6 @@
+(require 'autoinsert)
+(auto-insert-mode)
+(setq auto-insert-directory "~/.emacs.d/templates/")
+(setq auto-insert-query nil)
+(define-auto-insert "\\.html" "template.html")
+(add-hook 'find-file-hooks 'auto-insert)

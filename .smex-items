@@ -1,0 +1,40 @@
+
+;; ----- smex-history -----
+(
+ comment-region
+ run-ruby
+ inf-ruby
+ textmate-mode
+ list-packages
+ package-list-packages
+ eval-buffer
+)
+
+;; ----- smex-data -----
+(
+ (textmate-mode . 2)
+ (toggle-save-place-globally . 2)
+ (eval-buffer . 8)
+ (list-packages . 5)
+ (coffee-compile-buffer . 2)
+ (show-paren-mode . 1)
+ (git-status . 1)
+ (markdown-mode . 1)
+ (doctor . 2)
+ (yow . 2)
+ (mouse-avoidance-mode . 2)
+ (server-start . 3)
+ (server-force-delete . 2)
+ (comment-box . 1)
+ (uncomment-region . 1)
+ (comment-region . 4)
+ (package-install . 4)
+ (shell . 1)
+ (package-list-packages . 2)
+ (load-dotemacs . 2)
+ (rspec-mode . 1)
+ (run-spec . 2)
+ (inf-ruby . 1)
+ (run-ruby . 3)
+ (slime-fuzzy-select-and-process-event-in-target-buffer . 1)
+)
