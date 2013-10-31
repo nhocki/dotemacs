@@ -1,0 +1,16 @@
+*~
+*.BACKUP*
+*.BASE*
+*.LOCAL*
+*.REMOTE*
+log/*.log
+*.orig
+*#
+db/*.sqlite3
+.idea/*
+.idea/
+.DS_Store
+.svn
+projectile.cache
+projectile-bookmarks.eld
+.cask
