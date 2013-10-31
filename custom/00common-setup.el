@@ -31,6 +31,9 @@
 ;; Load zenburn theme
 (load-theme 'zenburn)
 
+;; Load diff mode for git commit messages
+(add-to-list 'auto-mode-alist '("COMMIT_EDITMSG$" . diff-mode))
+
 ;; Dash at point (https://github.com/stanaka/dash-at-point)
 (global-set-key "\C-c\C-d" 'dash-at-point)
 
