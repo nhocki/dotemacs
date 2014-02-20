@@ -21,6 +21,7 @@
 (load "04projectile")
 (load "05multiple-cursors")
 (load "06javascript")
+(load "07simp")
 
 (require 'textmate)
 (textmate-mode)

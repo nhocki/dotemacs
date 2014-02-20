@@ -61,3 +61,4 @@
 (depends-on "wrap-region")
 (depends-on "yaml-mode")
 (depends-on "zenburn-theme")
+(depends-on "simp")
