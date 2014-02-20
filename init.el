@@ -27,6 +27,7 @@
 (load "03smartparens")
 (load "04projectile")
 (load "05multiple-cursors")
+(load "06javascript")
 
 (require 'textmate)
 (textmate-mode)
