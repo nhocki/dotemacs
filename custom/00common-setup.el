@@ -27,6 +27,7 @@
 (setq-default show-trailing-whitespace t)
 (column-number-mode)
 (global-linum-mode t)
+(setq linum-format "%d ")
 
 ;; Load zenburn theme
 (load-theme 'zenburn)
