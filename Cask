@@ -62,3 +62,4 @@
 (depends-on "yaml-mode")
 (depends-on "zenburn-theme")
 (depends-on "simp")
+(depends-on "handlebars-mode")
