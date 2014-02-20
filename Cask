@@ -63,3 +63,6 @@
 (depends-on "zenburn-theme")
 (depends-on "simp")
 (depends-on "handlebars-mode")
+(depends-on "projectile")
+(depends-on "grizzl")
+(depends-on "ag")
