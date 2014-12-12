@@ -2,7 +2,7 @@
 (source "gnu" "http://elpa.gnu.org/packages/")
 (source "marmalade" "http://marmalade-repo.org/packages/")
 
-(depends-on "ac-js2")
+;; (depends-on "ac-js2")
 (depends-on "adaptive-wrap")
 (depends-on "ag")
 (depends-on "auto-complete")
