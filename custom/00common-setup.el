@@ -41,6 +41,12 @@
 ;; Highlight identation ( https://github.com/antonj/Highlight-Indentation-for-Emacs )
 (highlight-indentation-mode)
 
+
+;; SSH Config
+(require 'tramp)
+(setq tramp-default-method "ssh")
+
+
 ;; https://sites.google.com/site/steveyegge2/my-dot-emacs-file
 
 ;;
@@ -93,7 +99,7 @@
 ;; Navigate between windows using Alt-1, Alt-2, Shift-left, shift-up, shift-right
 (windmove-default-keybindings)
 
-(set-frame-font "-apple-Fira_Mono-medium-normal-normal-*-*-*-*-*-m-0-iso10646-1")
+;; (set-frame-font "-apple-Fira_Mono-medium-normal-normal-*-*-*-*-*-m-0-iso10646-1")
 
 ;; Display continuous lines
 (setq-default truncate-lines nil)
@@ -139,6 +145,20 @@
 (global-set-key "\C-c\C-m" 'execute-extended-command)
 
 (global-set-key "\C-xy" 'revert-buffer)
+
+;; my rebinds
+(global-set-key (kbd "M-z") 'undo)
+(global-set-key (kbd "<M-down>") 'end-of-buffer)
+(global-set-key (kbd "<M-up>") 'beginning-of-buffer)
+(global-set-key (kbd "M-n") 'end-of-buffer)
+(global-set-key (kbd "M-p") 'beginning-of-buffer)
+(global-set-key (kbd "M-g") 'goto-line)
+(global-set-key (kbd "C-t") 'shell)
+(global-set-key (kbd "M-R") 'query-replace)
+(global-set-key (kbd "M-F") 'ag-project-files)
+(global-set-key (kbd "C-j") 'hippie-expand)
+(global-set-key (kbd "C-x <C-down>") 'move-text-down)
+(global-set-key (kbd "C-x <C-up>") 'move-text-up)
 
 ;;some custom functions, stolen for internet
 (defun geosoft-forward-word ()
@@ -219,3 +239,16 @@
   (toggle-read-only))
 
 (add-hook 'compilation-filter-hook 'colorize-compilation-buffer)
+
+;; don't clutter the workspace with a bunch of backups
+(defvar user-temporary-file-directory
+  (concat temporary-file-directory user-login-name "/"))
+(make-directory user-temporary-file-directory t)
+(setq backup-by-copying t)
+(setq backup-directory-alist
+      `(("." . ,user-temporary-file-directory)))
+(setq auto-save-list-file-prefix
+      (concat user-temporary-file-directory ".auto-saves-"))
+(setq auto-save-file-name-transforms
+      `((".*" ,user-temporary-file-directory t)))
+(setq auto-save-default nil)
