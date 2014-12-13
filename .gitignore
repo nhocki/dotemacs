@@ -14,3 +14,5 @@ db/*.sqlite3
 projectile.cache
 projectile-bookmarks.eld
 .cask
+ido.last
+ac-comphist.dat
