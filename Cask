@@ -22,8 +22,6 @@
 (depends-on "floobits")
 (depends-on "fullscreen-mode")
 (depends-on "git")
-(depends-on "git-commit-mode")
-(depends-on "git-rebase-mode")
 (depends-on "grizzl")
 (depends-on "handlebars-mode")
 (depends-on "highlight")
